@@ -57,7 +57,10 @@
                            <TextField fx:id="textGetAge" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                         </children>
                      </GridPane>
-                     <Button layoutX="276.0" layoutY="47.0" mnemonicParsing="false" onAction="#makeFriend" prefHeight="507.0" prefWidth="906.0" text="Make friend! " />
+                     <Button layoutX="276.0" layoutY="47.0" mnemonicParsing="false" onAction="#makeFriend" prefHeight="507.0" prefWidth="906.0" text="Make friend! ">
+                        <font>
+                           <Font name="Javanese Text" size="96.0" />
+                        </font></Button>
                   </children>
                </AnchorPane>
          </content>
@@ -66,7 +69,7 @@
          <content>
            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                   <children>
-                     <ListView fx:id="friendList" layoutX="41.0" layoutY="24.0" onMouseClicked="#displayFriend" prefHeight="267.0" prefWidth="1095.0" />
+                     <ListView fx:id="friendList" layoutX="41.0" layoutY="41.0" onMouseClicked="#displayFriend" prefHeight="205.0" prefWidth="223.0" />
                      <Label layoutX="52.0" layoutY="344.0" prefHeight="17.0" prefWidth="294.0" text="NAME">
                         <font>
                            <Font name="Comic Sans MS" size="52.0" />
@@ -77,12 +80,12 @@
                            <Font name="Comic Sans MS" size="52.0" />
                         </font>
                      </Label>
-                     <Label fx:id="namef" layoutX="543.0" layoutY="336.0" text="-">
+                     <Label fx:id="namef" layoutX="401.0" layoutY="344.0" text="-">
                         <font>
                            <Font name="Malgun Gothic Semilight" size="36.0" />
                         </font>
                      </Label>
-                     <Label fx:id="agef" layoutX="543.0" layoutY="417.0" text="-">
+                     <Label fx:id="agef" layoutX="402.0" layoutY="439.0" text="-">
                         <font>
                            <Font name="Malgun Gothic Semilight" size="31.0" />
                         </font>
@@ -103,14 +106,19 @@
                            </LinearGradient>
                         </textFill>
                      </Label>
-                     <Button layoutX="673.0" layoutY="334.0" mnemonicParsing="false" onAction="#killFriend" prefHeight="253.0" prefWidth="453.0" text="Destoy Friendship" textFill="RED">
+                     <Button layoutX="570.0" layoutY="322.0" mnemonicParsing="false" onAction="#killFriend" prefHeight="253.0" prefWidth="548.0" text="Destoy Friendship" textFill="#fc0000">
                         <font>
-                           <Font size="16.0" />
+                           <Font size="48.0" />
                         </font>
                      </Button>
-                     <Button layoutX="925.0" layoutY="69.0" mnemonicParsing="false" onAction="#save" text="Save" />
-                     <Button layoutX="925.0" layoutY="196.0" mnemonicParsing="false" onAction="#load" text="load" />
-                     <TextField fx:id="fileNamer" layoutX="52.0" layoutY="550.0" prefHeight="25.0" prefWidth="256.0" promptText="fileName.txt" />
+                     <Button layoutX="1056.0" layoutY="261.0" mnemonicParsing="false" onAction="#save" text="add to file" />
+                     <Button layoutX="962.0" layoutY="261.0" mnemonicParsing="false" onAction="#load" text="load a file" />
+                     <TextField fx:id="fileNamer" layoutX="279.0" layoutY="39.0" prefHeight="209.0" prefWidth="842.0" promptText="fileName.txt">
+                        <font>
+                           <Font size="96.0" />
+                        </font></TextField>
+                     <Label layoutX="748.0" layoutY="265.0" text="will create file if doesn't exist" />
+                     <Label layoutX="41.0" layoutY="265.0" prefHeight="17.0" prefWidth="438.0" text="duplicate names will be hidden, unlock premium to access duplicate friends" />
                   </children></AnchorPane>
          </content>
        </Tab>

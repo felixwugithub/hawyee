@@ -1,6 +1,7 @@
 package com.example.friendbookver1;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -41,6 +42,9 @@ public class Friend {
     }
 
     public void writeToFile(String fileName) throws IOException{
+
+        File file = new File(fileName);
+        file.createNewFile();
         FileWriter fw = new FileWriter(fileName, true);
         BufferedWriter bw = new BufferedWriter(fw);
         bw.write(name + ",\r");

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/friendBookV1-main/FriendBookVer1/FriendBookVer1.iml" filepath="$PROJECT_DIR$/friendBookV1-main/FriendBookVer1/FriendBookVer1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/hawyee.iml" filepath="$PROJECT_DIR$/.idea/hawyee.iml" />
+    </modules>
+  </component>
+</project>
