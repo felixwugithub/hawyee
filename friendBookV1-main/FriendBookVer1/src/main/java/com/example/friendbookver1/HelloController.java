@@ -82,6 +82,7 @@ public class HelloController {
         for(Friend f : friends){
             friendList.getItems().add(f);
         }
+        friends.clear();
 
 
 
